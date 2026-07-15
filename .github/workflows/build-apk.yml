@@ -1,0 +1,13 @@
+name: Generate Android APK
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: HTML to APK Action
+        uses: kimhuilim/html-to-apk-action@v1.0.0
+        with:
+          build-folder-path: './'
+          app-name: 'ChronosEngine'
+          entry-file: 'remindctl.html'
