@@ -10,3 +10,4 @@ jobs:
         with:
           build-folder-path: './'
           app-name: 'ChronosEngine'
+          entry-file: 'remindctl.html'
